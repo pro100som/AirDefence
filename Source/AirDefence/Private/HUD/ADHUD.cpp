@@ -3,3 +3,10 @@
 #include "HUD/ADHUD.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogADHUD, All, All)
+
+void AADHUD::BeginPlay()
+{
+	Super::BeginPlay();
+
+	UE_LOG(LogADHUD, Display, TEXT("AADHUD::BeginPlay"));
+}
